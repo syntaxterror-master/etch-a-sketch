@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+        <div class="main-container">
+        <h1 class="title">Etch-a-Sketch</h1>
+
+    <div id="screen"></div>
+       
+    
+    <div class="buttons">
+        <div class="color-container">
+        <label for="color-btn">Pick a color</label>
+        <input id="color-btn" type="color" placeholder="Pick a color">
+    </div>
+        <button id="random-color-btn">Random colors</button>
+        <button id="reset-btn">Reset</button>
+        <button id="erase-btn">Erase</button>
+    </div>
+    <div class="resize-container">
+        <button>Resize</button>
+        <input
+        id="input-resize"
+        type="text"  
+        placeholder="Pick from 2 to 100" 
+        onchange="changeSize(this.value)">
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
