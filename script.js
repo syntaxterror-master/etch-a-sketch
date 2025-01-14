@@ -30,7 +30,8 @@ function changeSize(input) {
     const inputField = document.getElementById("input-resize");
 
     if (input >= 2 && input <= 100) {
-        createBoard(input); 
+        createBoard(input);
+        inputField.value = ""; 
     } else {
         
         const originalPlaceholder = inputField.placeholder;
